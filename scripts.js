@@ -1,3 +1,6 @@
-let age = 15, name = 17, id = 1234;
+// Hosting
+// var a = undefined;
 
-console.log(age);
+console.log(a);
+
+var a = 2;
