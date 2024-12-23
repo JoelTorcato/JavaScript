@@ -25,3 +25,13 @@ function MyFunc() {
 }
 
 MyFunc()
+
+// Average two grades
+
+let primeiraNota = prompt("Your first grade: ");
+let segundaNota = 3;
+
+console.log(primeiraNota + segundaNota / 2);
+
+// 
+
