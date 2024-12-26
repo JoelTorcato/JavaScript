@@ -131,3 +131,7 @@ console.log(person.lastName);
 console.log(person.age);
 
 console.log(typeof person); // Object
+
+// Bug (null)
+let n = null;
+console.log(typeof n); // Object
