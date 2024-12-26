@@ -112,4 +112,22 @@ const data = symbols.map(sym => obj[sym]);
 
 console.log(data);
 console.log(obj.city);
-console.log(data.) // See how to search for example age.
+// console.log(data.); // See how to search for example age.
+
+// Reference Type
+
+// Object
+
+let person = {
+  firstName: "Joel",
+  lastName: "Fernandes",
+  age: 16,
+};
+
+console.log(person);
+
+console.log(typeof person.firstName); // String
+console.log(person.lastName);
+console.log(person.age);
+
+console.log(typeof person); // Object
