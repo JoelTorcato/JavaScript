@@ -158,7 +158,9 @@ class Person {
   }
 }
 
-const he = new Person();
+const me = new Person();
+
+/* const he = new Person();
 
 // he.age = 12;
 // console.log(he.age)
@@ -172,4 +174,41 @@ Person.prototype.talk = function() {
 console.log(he.talk())
 
 console.log(Person.prototype === he.__proto__); // True
-console.log(Person.prototype.talk());
+console.log(Person.prototype.talk()); 
+
+ function Person () {
+  this.age = 12;
+ }
+ // Person.age = 40;
+
+ const me = new Person(); 
+
+ console.log(me.age);
+ console.log(Person.age); */
+ 
+class SuperHuman extends Person {
+  fly() {
+    return "Flying";
+  }
+}
+
+const you =  new SuperHuman();
+
+/* const he = Object.create(SuperHuman);
+console.log(he.fly()) It's giving an error but I don't know why */
+
+console.log(you.fly()) // Flying
+console.log(you.talk()) // Talking (extends)
+// console.log(me.fly()) Error (no extends)
+
+const people = {
+  talk() {
+    return 'talking'
+  }
+}
+
+const she = {}
+
+Object.setPrototypeOf(she, people); // The first parameter is the instance and the second parameter is where it comes from.
+
+console.log(she.talk());
