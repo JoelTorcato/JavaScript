@@ -135,3 +135,41 @@ console.log(typeof person); // Object
 // Bug (null)
 let n = null;
 console.log(typeof n); // Object
+
+// Classes
+
+/* const me = {
+  talk() {
+    return "Talking";
+  }
+}
+console.log(me.talk());
+
+const you = {
+  talk() {
+    return "Talking"
+  }
+}
+console.log(you.talk()); */
+
+class Person {
+  talk() {
+    return "Talking";
+  }
+}
+
+const he = new Person();
+
+// he.age = 12;
+// console.log(he.age)
+
+console.log(he.talk());
+console.log(typeof he); // Object
+
+Person.prototype.talk = function() {
+  return "New and improved talking";
+}
+console.log(he.talk())
+
+console.log(Person.prototype === he.__proto__); // True
+console.log(Person.prototype.talk());
