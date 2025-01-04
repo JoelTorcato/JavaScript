@@ -4,6 +4,11 @@ ids.add('abc');
 ids.add(0);
 ids.add(0);
 ids.add(false)
+ids.add({
+  name: 'Joel',
+  age: 16,
+  single: true
+})
 
 for (const showsIds of ids) {  // for-of loop
   if (typeof showsIds === 'boolean') { // It is equal to if (showsIds === true || false)
